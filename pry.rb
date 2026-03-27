@@ -5,21 +5,21 @@
 class Pry < Formula
   desc "Terminal UI for reviewing GitHub pull requests"
   homepage "https://github.com/jethrokuan/pry"
-  version "0.0.5"
+  version "0.0.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jethrokuan/pry/releases/download/v0.0.5/pry_0.0.5_darwin_amd64.tar.gz"
-      sha256 "3de5d1c8574286674a5f3d3e3051c8b447e2d445ecc310b4df4f09d185ced516"
+      url "https://github.com/jethrokuan/pry/releases/download/v0.0.6/pry_0.0.6_darwin_amd64.tar.gz"
+      sha256 "a8ca6a944729202d791a9b71a0ea9389609c1b8cc7e7ae5a766b4830c319203a"
 
       define_method(:install) do
         bin.install "pry"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jethrokuan/pry/releases/download/v0.0.5/pry_0.0.5_darwin_arm64.tar.gz"
-      sha256 "1ade5f10be12c48f45645bbf2969902775cf6d4477043003a7817fae403d4148"
+      url "https://github.com/jethrokuan/pry/releases/download/v0.0.6/pry_0.0.6_darwin_arm64.tar.gz"
+      sha256 "c3bc4bcfe9c3f525f153ea084744d3b588db6a3e5c157827f997acf21c452157"
 
       define_method(:install) do
         bin.install "pry"
@@ -29,15 +29,15 @@ class Pry < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jethrokuan/pry/releases/download/v0.0.5/pry_0.0.5_linux_amd64.tar.gz"
-      sha256 "c6b9d995d602cefe1aef6e91000de7fbb845af4bed60e3950a9604fff8c677ac"
+      url "https://github.com/jethrokuan/pry/releases/download/v0.0.6/pry_0.0.6_linux_amd64.tar.gz"
+      sha256 "c8a939af04058397d3a4986718318cda48bf929925e784448a9595c4a1a7721d"
       define_method(:install) do
         bin.install "pry"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jethrokuan/pry/releases/download/v0.0.5/pry_0.0.5_linux_arm64.tar.gz"
-      sha256 "808a5ef6ab9b809109b88ffb6fa7782ba85eabb43ea85606e825fcbfcb417037"
+      url "https://github.com/jethrokuan/pry/releases/download/v0.0.6/pry_0.0.6_linux_arm64.tar.gz"
+      sha256 "fa4fe70ebd48e26df44b72fde9aa9eb5bbc7f4ab1204b96453294f73544f9db9"
       define_method(:install) do
         bin.install "pry"
       end
